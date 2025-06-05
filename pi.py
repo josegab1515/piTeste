@@ -31,7 +31,7 @@ if not df.empty:
     df["Horário"] = pd.to_datetime(df["Horário"])
     df = df.sort_values("Horário")
 
-    # Transformar coluna Aspersor em texto
+    # Transformar coluna Aspersor em texto 
     df["Aspersor"] = df["Aspersor"].map({True: "Ligado", False: "Desligado"})
 
     #Resumo
